@@ -1,11 +1,11 @@
 import Header from "./Header";
-import TicketList from "./TicketList";
+import TicketControl from "./TicketControl";
 
 function App() {
   return (
     <>
       <Header />
-      <TicketList />
+      <TicketControl />
     </>
   );
 }
