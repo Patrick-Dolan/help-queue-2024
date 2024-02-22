@@ -46,6 +46,6 @@ dolanp1992@gmail.com
 
 ## License
 
-_MIT_
+[MIT License](./LICENSE.txt)
 
 Copyright (c) _2024_ _Patrick Dolan_
