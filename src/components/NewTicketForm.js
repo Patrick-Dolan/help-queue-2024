@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 import ReusableForm from './ReusableForm';
+import { formatDistanceToNow } from 'date-fns';
 
 function NewTicketForm(props){
   function handleNewTicketFormSubmission(event) {
@@ -9,7 +10,9 @@ function NewTicketForm(props){
       names: event.target.names.value, 
       location: event.target.location.value, 
       issue: event.target.issue.value, 
-      id: v4()
+      id: v4(),
+      timeOpen: new Date(),
+      formattedWaitTIme: formatDistanceToNow(new Date(), { addSuffix: true })
     });
   }
 
